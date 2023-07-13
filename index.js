@@ -1,4 +1,6 @@
-
+let getTotalPrize = (groceries)=>{
+    console.log(groceries)
+}
 
 
 
