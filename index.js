@@ -1,10 +1,14 @@
 let getTotalPrize = (groceries)=>{
     console.log(groceries)
+    let totalCost = groceries.map((item)=>{
+        return Object.values(item).slice(-2).reduce((acc,num)=>acc*num)
+    })
+    console.log(totalCost)
 }
 
 
 
-getTotalPrize([
+let result = getTotalPrize([
     {
         product:"milk",quantity:2,prize:2.5
     },
