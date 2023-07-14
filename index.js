@@ -10,9 +10,9 @@ let getTotalPrize = (groceries)=>{
 
 let result = getTotalPrize([
     {
-        product:"milk",quantity:1,prize:1.5
+        product:"milk",quantity:1,price:1.5
     },
     {
-        product:"banana",quanity:2,prize:2.5
+        product:"banana",quanity:2,price:2.5
     }
 ])
