@@ -3,16 +3,21 @@
 //---------------------------------------------------------------------------------
 const groceries =[
     {
-        product:"milk",quantity:1,price:1.5
+        product:"milk",quantity:1,price:30
     },
     {
-        product:"banana",quanity:2,price:2.5
+        product:"curd",quanity:2,price:30
     },
     {
-        product:"mango",quanity:2,price:3
+        product:"tomato",quanity:2,price:85
     },
     {
-        product:"grape",quanity:2,price:3.5
+        product:"grape",quanity:2,price:60
+    },
+    {
+        
+        product:"apple",quanity:2,price:75
+
     }
 ];
 
@@ -81,7 +86,7 @@ const createUI = ()=>{
   const sectionEl = document.querySelector('.section-subtitle');
   const spanEl = document.createElement('span');
   spanEl.setAttribute('id','title')
-  spanEl.innerHTML = `$ ${totalCost.toFixed(2)}`;
+  spanEl.innerHTML = `RS ${totalCost.toFixed(2)}`;
   sectionEl.appendChild(spanEl)
   
 
