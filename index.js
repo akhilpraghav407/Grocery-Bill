@@ -7,6 +7,12 @@ const groceries =[
     },
     {
         product:"banana",quanity:2,price:2.5
+    },
+    {
+        product:"mango",quanity:2,price:3
+    },
+    {
+        product:"grape",quanity:2,price:3.5
     }
 ];
 
@@ -75,7 +81,7 @@ const createUI = ()=>{
   const sectionEl = document.querySelector('.section-subtitle');
   const spanEl = document.createElement('span');
   spanEl.setAttribute('id','title')
-  spanEl.innerHTML = totalCost;
+  spanEl.innerHTML = `$ ${totalCost.toFixed(2)}`;
   sectionEl.appendChild(spanEl)
   
 
